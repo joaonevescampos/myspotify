@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    height: 80px;
+}
+
+.search {
+    background-color: var(--color3);
+    width: var(--search-width);
+    height: var(--search-height);
+    border-radius: 20px;
+    border: none;
+}
+
+.avatar {
+    background-color: var(--color3);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+}

@@ -52,10 +52,23 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(var(--card-color1), var(--card-color-gradient1));
     margin: 5px 10px 5px 0;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     font-weight: 600;
+}
+
+#funk {
+    background-image: linear-gradient(var(--card-color1), var(--card-color-gradient1));
+}
+
+#sertanejo {
+    background-image: linear-gradient(var(--card-color2), var(--card-color-gradient2));
+}
+#mpb {
+    background-image: linear-gradient(var(--card-color3), var(--card-color-gradient3));
+}
+#pop {
+    background-image: linear-gradient(var(--card-color4), var(--card-color-gradient4));
 }

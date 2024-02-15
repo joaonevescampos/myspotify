@@ -25,10 +25,10 @@ const Main = () => {
                 </div>
                 <h1>Categorias</h1>
                 <div className={style.cards} >
-                    <div className={style.card} >Funk</div>
-                    <div className={style.card} >Funk</div>
-                    <div className={style.card} >Funk</div>
-                    <div className={style.card} >Funk</div>
+                    <div className={style.card} id={style.funk} >Funk</div>
+                    <div className={style.card} id={style.sertanejo} >Sertanejo</div>
+                    <div className={style.card} id={style.mpb}>MPB</div>
+                    <div className={style.card} id={style.pop}>POP</div>
                 </div>
                 
                 <h1>Recomendado</h1>

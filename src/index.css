@@ -2,6 +2,9 @@
 
 body, html {
   background-image: linear-gradient(var(--color4) 10%, var(--color5) 60%, #000000 90%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--color0);
   margin: 0;
   padding: 0;
@@ -28,10 +31,10 @@ body, html {
   --card-color-gradient3: #0E4500;
   --card-color-gradient4: #5B00CF;
 
-  --card-width: 100px;
-  --card-height: 100px;
+  --card-width: 20%;
+  --card-height: 20%;
   --card-album-width: 20%;
-  --card-album-height: 4rem;
+  --card-album-height: 20%;
 
   --card-width-desktop: 180px;
   --card-height-desktop: 180px;

@@ -10,13 +10,15 @@ nav {
     align-items: center;
     width: 60%;
     min-width: 300px;
-    max-width: 600px;
+    max-width: 500px;
     height: 80px;
+    padding: 0 20px 0 20px;
 }
 
 .search {
     background-color: var(--color3);
-    width: var(--search-width);
+    width: 50%;
+    min-width: var(--search-width);
     height: var(--search-height);
     border-radius: 20px;
     border: none;

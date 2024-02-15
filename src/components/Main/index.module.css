@@ -18,24 +18,34 @@ h1 {
 }
 
 .albuns {
-    display: flex;
-    justify-content: start;
-    margin: 0 20px 0 20px;
-    
+    margin: 0 20px 0 20px; 
 }
 
 .albuns img {
     width: var(--card-album-width);
+    max-width: 60px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.covers {
+    margin: 0 20px 0 20px; 
+}
+
+.covers img {
+    width: var(--card-width);
     max-width: 100px;
     min-width: 60px;
     border-radius: 10px;
     margin: 5px;
 }
 
-.card_container {
+
+.cards {
     display: flex;
-    height: 110px;
-    margin-left: 30px ;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 20px ;
 }
 
 .card {
@@ -43,9 +53,9 @@ h1 {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(var(--card-color1), var(--card-color-gradient1));
-    margin-right: 10px;
-    width: 100px;
-    height: 100px;
+    margin: 5px 10px 5px 0;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     font-weight: 600;
 }

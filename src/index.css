@@ -36,15 +36,15 @@ body, html {
   --card-album-width: 20%;
   --card-album-height: 20%;
 
-  --card-width-desktop: 180px;
-  --card-height-desktop: 180px;
+  --card-width-desktop: 150px;
+  --card-height-desktop: 150px;
   --card-album-width-desktop: 100px;
   --card-album-width-desktop: 100px;
 
   --search-width: 215px;
-  --search-width-desktop: 215px;
+  --search-width-desktop: 400px;
   --search-height: 30px;
-  --search-height-desktop: 50px;
+  --search-height-desktop: 40px;
 
   --music-width: 274px;
   --music-height: 30px;

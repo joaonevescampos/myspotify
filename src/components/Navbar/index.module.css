@@ -1,18 +1,27 @@
 nav {
-    display: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #000;
     height: 100vh;
     margin: 0;
+    z-index: 1001;
+}
+
+.logo {
+    height: 30px;
+    padding: 20px;
 }
 
 .menu_container {
     width: 200px;
+    height: 100vh;
 }
 
 .main_menu_container {
     background-image: linear-gradient(to bottom right, var(--color4) 40%, hsla(293, 100%, 48%, 0.377) 90%);
-    margin: 0px 10px 5px 10px;
-    height: 300px;
+    margin: 10px 10px 5px 10px;
+    height: 350px;
     border-radius: 5px;
 }
 
@@ -24,7 +33,7 @@ nav {
 }
 
 .settings_container {
-    background-image: linear-gradient(to bottom right, var(--color4) 40%, hsla(293, 100%, 48%, 0.377) 90%);
+    background-image: linear-gradient(to bottom right, var(--color4) 40%, #d800f560 90%);
     margin: 5px 10px 5px 10px;
     height: 120px;
     border-radius: 5px;

@@ -11,6 +11,7 @@ import card5 from '../../assets/cards/9.jpeg'
 import card6 from '../../assets/cards/10.jpeg'
 import card7 from '../../assets/cards/11.jpeg'
 import card8 from '../../assets/cards/12.jpeg'
+import banner from '../../assets/banner/banner.gif'
 
 const Main = () => {
     return ( 

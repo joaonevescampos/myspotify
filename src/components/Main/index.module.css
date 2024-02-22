@@ -2,7 +2,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .main_container {
@@ -73,7 +72,17 @@ h1 {
     background-image: linear-gradient(var(--card-color4), var(--card-color-gradient4));
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        width: calc(100vw + 200px);
+    }
+}
+
 @media screen and (min-width: 992px) {
+
+    main {
+        width: calc(100vw + 300px);
+    }
   
     h1 {
         font-size: 16px;

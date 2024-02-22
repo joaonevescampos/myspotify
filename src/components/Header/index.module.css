@@ -1,48 +1,77 @@
 header {
     display: flex;
+    flex-direction: column ;
     justify-content: center;
 }
 
 .container_nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 60%;
-    min-width: 300px;
-    max-width: 500px;
+    width: 100vw;
     height: 80px;
-    padding: 0 20px 0 20px;
 }
 
 .search {
     background-color: var(--color3);
-    width: 50%;
+    width: 300px;
     min-width: var(--search-width);
     height: var(--search-height);
     border-radius: 20px;
     border: none;
 }
 
-.avatar {
-    background-color: var(--color3);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: none;
+.banner_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url("../../assets/banner/banner.gif");
+    background-color: rgba(225, 255, 225, 0.5);
+    backdrop-filter: 'blur(5px)';
+}
+
+.banner_container > img{
+    width: 400px;
+    z-index: 1000;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 0, 201, 0.5);
+    backdrop-filter: blur(5px);
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        width: calc(100vw + 200px);
+    }
+
+    .avatar {
+        background-color: var(--color3);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
     header {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        /* width: 100vw; */
+        width: calc(100vw + 300px);
     }
     
     .container_nav {
-        display: flex;
-        justify-content: space-between;
-        width: 630px;
+        /* display: flex;
+        justify-content: space-between; */
+        padding: 0 300px 0 300px;
+        /* width: 630px; */
         min-width: none;
         max-width: none;
         height: 150px;
@@ -54,9 +83,17 @@ header {
         min-width: var(--search-width-desktop);
         height: var(--search-height-desktop);
     }
-    
+
     .avatar {
+        background-color: var(--color3);
         width: 50px;
         height: 50px;
-    } 
+        border-radius: 50%;
+        border: none;
+    }
+
+    .banner_container > img{
+        width: 400px;
+        z-index: 1000;
+    }
 }

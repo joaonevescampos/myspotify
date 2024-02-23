@@ -8,9 +8,11 @@ const Header = () => {
                 <img src={banner} alt="banner" />
                 <div className={style.blur}></div>
             </div>
-            <div className={style.container_nav}>
-                <input type="text" className={style.search} />
-                <div className={style.avatar} ></div>
+            <div className={style.header_search}>
+                <div className={style.container_nav}>
+                    <input type="text" className={style.search} />
+                    <div className={style.avatar} ></div>
+                </div>
             </div>
             
         </header>

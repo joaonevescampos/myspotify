@@ -2,6 +2,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .main_container {
@@ -76,6 +77,7 @@ h1 {
     main {
         width: calc(100vw + 200px);
     }
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -87,26 +89,35 @@ h1 {
     h1 {
         font-size: 16px;
     }
-    
+
     .albuns {
-        margin: 0 20px 0 20px; 
+        margin: 20px; 
     }
     
     .albuns img {
         width: var(--card-album-width-desktop);
         max-width: none;
+        margin: 10px;
     }
     
-    
+    .covers {
+        margin: 20px;
+    }
+
     .covers img {
         width: var(--card-width-desktop);
         max-width: none;
+        margin: 10px;
     }
     
     
     .card {
         width: var(--card-width-desktop);
         height: var(--card-height-desktop);
+        margin: 10px;
+        font-size: 18pt;
     }
+
+    
     
 }

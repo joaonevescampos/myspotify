@@ -1,6 +1,7 @@
 import styles from './index.module.css'
 import logo from '../../assets/logo/logo-desktop.png'
 import { useState, useEffect } from 'react';
+import { FaUserCircle, FaHome, FaHeart, FaSearch, FaBookOpen, FaPlay, FaPause, FaCog} from 'react-icons/fa'
 
 const Navbar = () => {
 
@@ -21,7 +22,7 @@ const Navbar = () => {
     return ( 
         <>
             {(windowSize > 768) ? (
-                <nav>
+                <nav className={styles.nav_desktop}>
                 <div className={styles.menu_container}>
                     
                     <div className={styles.main_menu_container}>
@@ -67,9 +68,13 @@ const Navbar = () => {
                 </div>
                 </nav>
             ) : (
-                    <nav>
+                    <nav className={styles.nav_mobile}>
                         <div className={styles.nav_container_mobile}>
-                            
+                            <FaHome className={ styles.nav_icons} />
+                            <FaSearch className={ styles.nav_icons} />
+                            <FaHeart className={ styles.nav_icons} />
+                            <FaBookOpen className={ styles.nav_icons} />
+                            <FaUserCircle className={ styles.nav_icons} />
                         </div>
                 </nav>    
             )}

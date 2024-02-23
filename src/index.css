@@ -20,7 +20,8 @@ body, html {
   --color2: #AD7CB5;
   --color3: #826D9C;
   --color4: #22004e;
-  --color5: #000000;
+  --color5: #000;
+  --color6: #10002e;
   
   --card-color1: #009AF1;
   --card-color2: #DA5B00;
@@ -36,10 +37,10 @@ body, html {
   --card-album-width: 20%;
   --card-album-height: 20%;
 
-  --card-width-desktop: 150px;
-  --card-height-desktop: 150px;
-  --card-album-width-desktop: 100px;
-  --card-album-width-desktop: 100px;
+  --card-width-desktop: 13vw;
+  --card-height-desktop: 13vw;
+  --card-album-width-desktop: 120px;
+  --card-album-width-desktop: 120px;
 
   --search-width: 215px;
   --search-width-desktop: 400px;

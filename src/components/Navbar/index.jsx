@@ -1,7 +1,7 @@
 import styles from './index.module.css'
 import logo from '../../assets/logo/logo-desktop.png'
 import { useState, useEffect } from 'react';
-import { FaUserCircle, FaHome, FaHeart, FaSearch, FaBookOpen, FaPlay, FaPause, FaCog} from 'react-icons/fa'
+import { FaUserCircle, FaHome, FaHeart, FaSearch, FaBookOpen, FaStar, FaGlobe, FaPlus, FaPlay, FaPause, FaCog} from 'react-icons/fa'
 
 const Navbar = () => {
 
@@ -23,49 +23,57 @@ const Navbar = () => {
         <>
             {(windowSize > 768) ? (
                 <nav className={styles.nav_desktop}>
-                <div className={styles.menu_container}>
+                    <div className={styles.menu_container}>
+                        
+                        <div className={styles.main_menu_container}>
+                            <div>
+                                <img src={logo} alt="logo" className={styles.logo} />
+                            </div>
                     
-                    <div className={styles.main_menu_container}>
-                        <div>
-                        <img src={logo} alt="logo" className={styles.logo} />
+                            <ul>
+                                <li>
+                                    <FaHome className={styles.nav_icons_desktop} />
+                                    <a href="#">Início</a>
+                                </li>
+                                <li>
+                                    <FaSearch className={styles.nav_icons_desktop} />
+                                    <a href="#">Buscar</a>
+                                </li>
+                                <li>
+                                    <FaBookOpen className={styles.nav_icons_desktop} />
+                                    <a href="#">Minha biblioteca</a>
+                                </li>
+                                <li>
+                                        <FaHeart className={styles.nav_icons_desktop} />
+                                    <a href="#">Curtidas</a>
+                                </li>
+                                    <li>
+                                        <FaStar className={styles.nav_icons_desktop} />
+                                    <a href="#">Mais tocadas</a>
+                                </li>
+                            </ul>
                         </div>
-                   
-                        <ul>
-                            <li>
-                                <a href="#">Início</a>
-                            </li>
-                            <li>
-                                <a href="#">Buscar</a>
-                            </li>
-                            <li>
-                                <a href="#">Minha biblioteca</a>
-                            </li>
-                            <li>
-                                <a href="#">Curtidas</a>
-                            </li>
-                            <li>
-                                <a href="#">Mais tocadas</a>
-                            </li>
-                        </ul>
+                        <div className={styles.playlist_container}>
+                            <ul>
+                                    <li>
+                                        <FaPlus className={styles.nav_icons_desktop} />
+                                    <a href="#">Crie sua playlist</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className={styles.settings_container}>
+                            <ul>
+                                    <li>
+                                        <FaCog className={styles.nav_icons_desktop} />
+                                    <a href="#">Configurações</a>
+                                </li>
+                                    <li>
+                                        <FaGlobe className={styles.nav_icons_desktop} />
+                                    <a href="#">Português</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className={styles.playlist_container}>
-                        <ul>
-                            <li>
-                                <a href="#">Crie sua playlist</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className={styles.settings_container}>
-                        <ul>
-                            <li>
-                                <a href="#">Configurações</a>
-                            </li>
-                            <li>
-                                <a href="#">Português</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 </nav>
             ) : (
                     <nav className={styles.nav_mobile}>

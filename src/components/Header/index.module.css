@@ -14,11 +14,26 @@ header {
 }
 
 .search {
-    background-color: var(--color3);
+    background-color: #906ad69c;
     width: 280px;
-    min-width: var(--search-width);
     height: var(--search-height);
     border-radius: 20px;
+    border: none;
+}
+
+.search_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    margin: 10px;
+}
+
+.avatar {
+    color: var(--color3);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     border: none;
 }
 
@@ -77,13 +92,13 @@ header {
         height: 35px;
     }
 
+    .search_container {
+        width: 430px;
+    }
+
     .avatar {
-        background-color: var(--color3);
         width: 60px;
         height: 60px;
-        border-radius: 50%;
-        border: none;
-        margin: 20px;
     }
 }
 
@@ -111,17 +126,17 @@ header {
     }
     
     .search {
-        width: 60%;
-        max-width: 600px;
+        width: 450px;
         height: var(--search-height-desktop);
     }
 
+    .search_container {
+        width: 500px;
+    }
+
     .avatar {
-        background-color: var(--color3);
         width: 70px;
         height: 70px;
-        border-radius: 50%;
-        border: none;
     }
 
     .banner_container > img{

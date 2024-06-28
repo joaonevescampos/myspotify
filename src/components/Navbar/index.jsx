@@ -63,12 +63,12 @@ const Navbar = () => {
                         </div>
                         <div className={styles.settings_container}>
                             <ul>
-                                    <li>
-                                        <FaCog className={styles.nav_icons_desktop} />
+                                <li>
+                                    <FaCog className={styles.nav_icons_desktop} />
                                     <a href="#">Configurações</a>
                                 </li>
-                                    <li>
-                                        <FaGlobe className={styles.nav_icons_desktop} />
+                                <li>
+                                    <FaGlobe className={styles.nav_icons_desktop} />
                                     <a href="#">Português</a>
                                 </li>
                             </ul>

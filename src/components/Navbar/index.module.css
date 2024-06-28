@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, var(--color4) 50%, #000 90%);
+    background-image: linear-gradient(to bottom right, #120031 40%, #000 90%);
     height: 100vh;
     margin: 0;
     z-index: 1001;
@@ -41,21 +41,21 @@
 }
 
 .main_menu_container {
-    background-image: linear-gradient(to bottom right, var(--color4) 40%, hsla(293, 100%, 48%, 0.377) 90%);
+    background-image: linear-gradient(to bottom right, #120031 40%, hsla(293, 100%, 24%, 0.377) 90%);
     margin: 10px 10px 5px 10px;
     height: 350px;
     border-radius: 5px;
 }
 
 .playlist_container {
-    background-image: linear-gradient(to bottom right, var(--color4) 40%, hsla(293, 100%, 48%, 0.377) 90%);
+    background-image: linear-gradient(to bottom right, #120031 40%, hsla(293, 100%, 24%, 0.377) 90%);
     margin: 5px 10px 5px 10px;
     height: 80px;
     border-radius: 5px;
 }
 
 .settings_container {
-    background-image: linear-gradient(to bottom right, var(--color4) 40%, #d800f560 90%);
+    background-image: linear-gradient(to bottom right, #120031 40%, hsla(293, 100%, 24%, 0.377) 90%);
     margin: 5px 10px 5px 10px;
     height: 120px;
     border-radius: 5px;
@@ -72,9 +72,17 @@ ul {
 }
 
 li {
+    display: flex;
+    align-items: center;
     padding: 10px 0 10px 0;
     list-style-type: none;
     font-weight: 600;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .nav_icons_desktop {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (min-width: 992px) {

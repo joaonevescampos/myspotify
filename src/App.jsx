@@ -1,18 +1,11 @@
-import Main from './components/Main';
-import Header from './components/Header'
-import Navbar from './components/Navbar';
-import './App.css'
+import "./css/App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="app">
-        <Navbar />
-        <div className='main_container'>
-          <Header />
-          <Main />
-        </div>
-      </div>
-  )
+    <>
+      <Header />
+    </>
+  );
 }
-
 export default App;

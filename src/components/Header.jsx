@@ -1,11 +1,15 @@
 import logoSpotify from '../assets/img/spotify-logo.png';
 import "../css/components/header.css";
+import "../css/reset.css";
+
 
 const Header = () => {
   return (
     <>
       <header>
-        <img src={logoSpotify} alt="/" />
+        <a href="/">
+          <img src={logoSpotify} alt="Spotify" />
+        </a>
         <a href="/">My Spotify</a>
       </header>
     </>

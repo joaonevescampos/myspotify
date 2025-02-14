@@ -1,25 +1,37 @@
 main {
-  background-image: linear-gradient(to bottom, rgb(1, 75, 1), black);
+  background-image: linear-gradient(to bottom, rgb(0, 61, 0), black);
   width: 100%;
   height: 100%;
   border-radius: 20px;
   padding: 30px;
 }
 
+/* itemsList  */
 main > .itemsList-container {
   max-width: 1250px;
   margin: auto;
   margin-bottom: 60px;
 }
 
-main > .itemsList-container > h2 {
+main > .itemsList-container > .itemList-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+main > .itemsList-container > .itemList-header > h2 {
   font-size: 24px;
+}
+
+main > .itemsList-container > .itemList-header > a:hover {
+  text-decoration: underline;
 }
 
 main > .itemsList-container > .itemsList {
   display: flex;
   align-items: start;
-  padding: 20px 20px 0 20px;
+  padding: 40px 20px 0 20px;
   gap: 30px;
   overflow-x: scroll;
   margin: auto;
@@ -36,17 +48,17 @@ main > .itemsList-container > .itemsList::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-main > .itemsList-container > .itemsList > li {
+main > .itemsList-container > .itemsList > li > a {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 20px;
   width: 200px;
   height: 250px;
 }
 
-main > .itemsList-container > .itemsList > li > h2 {
+main > .itemsList-container > .itemsList > li > a > h2 {
   font-family: "Poppins";
   font-size: 14px;
   text-align: center;
@@ -57,14 +69,14 @@ main > .itemsList-container > .itemsList > li > h2 {
   text-overflow: ellipsis;
 }
 
-main > .itemsList-container > .itemsList > li > picture {
+main > .itemsList-container > .itemsList > li > a > picture {
   position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-main > .itemsList-container > .itemsList > li:hover > picture::before {
+main > .itemsList-container > .itemsList > li > a:hover > picture::before {
   position: absolute;
   content: "\25B6";
   font-size: 32px;
@@ -81,7 +93,7 @@ main > .itemsList-container > .itemsList > li:hover > picture::before {
   cursor: pointer;
 }
 
-main > .itemsList-container > .itemsList > li > picture > img {
+main > .itemsList-container > .itemsList > li > a > picture > img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -89,25 +101,32 @@ main > .itemsList-container > .itemsList > li > picture > img {
 }
 
 @media (max-width: 768px) {
-  main > .itemsList-container > .itemsList > li {
-    width: 100px;
-    height: 200px;
+  main > .itemsList-container > .itemsList {
+    display: flex;
+    align-items: start;
+    padding: 30px 10px 0 10px;
+    gap: 20px;
   }
 
-  main > .itemsList-container > .itemsList > li > h2 {
+  main > .itemsList-container > .itemsList > li > a {
+    width: 100px;
+    height: 180px;
+  }
+
+  main > .itemsList-container > .itemsList > li > a > h2 {
     font-size: 12px;
   }
 
-  main > .itemsList-container > .itemsList > li > picture {
+  main > .itemsList-container > .itemsList > li > a > picture {
     width: 100px;
     height: 100px;
   }
 
-  main > .itemsList-container > .itemsList > li:hover > picture::before {
+  main > .itemsList-container > .itemsList > li > a:hover > picture::before {
     border: 3px solid #1ed75f7c;
   }
 
-  main > .itemsList-container > .itemsList > li > picture > img {
+  main > .itemsList-container > .itemsList > li > a > picture > img {
     width: 100px;
     height: 100px;
   }

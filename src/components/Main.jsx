@@ -8,16 +8,24 @@ const Main = () => {
   return (
     <main>
       <ItemsList
-        title="Artistas"
+        title="Top 20 artistas "
         maxItems={20}
         array={artistArray}
         pathSingle="artist"
         pathMultiple="artists"
       />
       <ItemsList
-        title="Músicas"
+        title="Top 20 Músicas"
         maxItems={20}
         array={songsArray}
+        pathSingle="song"
+        pathMultiple="songs"
+      />
+      <ItemsList
+        title="Músicas Favoritas"
+        maxItems={20}
+        array={songsArray}
+        favorite={true}
         pathSingle="song"
         pathMultiple="songs"
       />

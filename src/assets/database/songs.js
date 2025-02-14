@@ -112,6 +112,7 @@ export const songsArray = [
     artist: "MC Tuto",
     audio: "https://jornada-fullstack.s3.us-east-2.amazonaws.com/barbie.mp3",
     id: 13,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e02dc16c0b3939b95e09076ec5e",
@@ -144,6 +145,7 @@ export const songsArray = [
     artist: "MC Tuto",
     audio: "https://jornada-fullstack.s3.us-east-2.amazonaws.com/barbie.mp3",
     id: 17,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e02320f4a08913b939a8637c301",
@@ -186,6 +188,7 @@ export const songsArray = [
     audio:
       "https://jornada-fullstack.s3.us-east-2.amazonaws.com/cantada-boba.mp3",
     id: 22,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e02af41105c5cd91b28f2cf219d",
@@ -240,6 +243,7 @@ export const songsArray = [
     audio:
       "https://jornada-fullstack.s3.us-east-2.amazonaws.com/cantada-boba.mp3",
     id: 28,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e02af41105c5cd91b28f2cf219d",
@@ -294,6 +298,7 @@ export const songsArray = [
     audio:
       "https://jornada-fullstack.s3.us-east-2.amazonaws.com/ultima-noite.mp3",
     id: 34,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e0235bc4bc847696d28e2882b16",
@@ -364,6 +369,7 @@ export const songsArray = [
     artist: "Grupo Menos É Mais",
     audio: "https://jornada-fullstack.s3.us-east-2.amazonaws.com/adorei.mp3",
     id: 42,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e0251e655c934f5bed04f867335",
@@ -428,6 +434,7 @@ export const songsArray = [
     artist: "Grupo Menos É Mais",
     audio: "https://jornada-fullstack.s3.us-east-2.amazonaws.com/adorei.mp3",
     id: 50,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e02625ae5aac6877af40cbe60a3",
@@ -473,6 +480,7 @@ export const songsArray = [
     audio:
       "https://jornada-fullstack.s3.us-east-2.amazonaws.com/amizade-com-ex.mp3",
     id: 55,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e02ff93ff99ca25cbd3607247bb",
@@ -509,6 +517,7 @@ export const songsArray = [
     audio:
       "https://jornada-fullstack.s3.us-east-2.amazonaws.com/amizade-com-ex.mp3",
     id: 59,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e0239833b5940945cf013e8406c",
@@ -526,6 +535,7 @@ export const songsArray = [
     artist: "Matheus & Kauan",
     audio: "https://jornada-fullstack.s3.us-east-2.amazonaws.com/universo.mp3",
     id: 61,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e0213fd8e80d5b8fc0936cf9cc6",
@@ -550,6 +560,7 @@ export const songsArray = [
     artist: "Matheus & Kauan",
     audio: "https://jornada-fullstack.s3.us-east-2.amazonaws.com/universo.mp3",
     id: 64,
+    favorite: true,
   },
   {
     image: "https://i.scdn.co/image/ab67616d00001e0284bc28fabab28025e3d6a98c",

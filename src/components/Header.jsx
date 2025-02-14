@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logoSpotify from '../assets/img/spotify-logo.png';
 import "../css/components/header.css";
 import "../css/reset.css";
@@ -7,10 +8,10 @@ const Header = () => {
   return (
     <>
       <header>
-        <a href="/">
+        <Link to="/">
           <img src={logoSpotify} alt="Spotify" />
-        </a>
-        <a href="/">My Spotify</a>
+        </Link>
+        <Link to="/">My Spotify</Link>
       </header>
     </>
   );

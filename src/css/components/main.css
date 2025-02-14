@@ -1,5 +1,6 @@
 main {
-  background-image: linear-gradient(to bottom, rgb(0, 61, 0), black);
+  background-image: linear-gradient(to bottom, rgb(0, 15, 0) 10%, black 80%);
+
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -8,7 +9,7 @@ main {
 
 /* itemsList  */
 main > .itemsList-container {
-  max-width: 1250px;
+  max-width: 1360px;
   margin: auto;
   margin-bottom: 60px;
 }
@@ -36,19 +37,29 @@ main > .itemsList-container > .itemsList {
   overflow-x: scroll;
   margin: auto;
 }
+/* itemsListFull  */
+main > .itemsList-container > .itemsListFull {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 0 20px;
+  gap: 30px;
+  margin: auto;
+}
 
 main > .itemsList-container > .itemsList::-webkit-scrollbar {
-  background-color: transparent;
-  height: 10px;
+  background-color: #000;
+  height: 8px;
 }
 
 main > .itemsList-container > .itemsList::-webkit-scrollbar-thumb {
-  background-color: #a0a0a044;
+  background-color: #00720954;
   border-radius: 10px;
   cursor: pointer;
 }
 
-main > .itemsList-container > .itemsList > li > a {
+main > .itemsList-container > .itemsList > li > a, main > .itemsList-container > .itemsListFull > li > a {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -58,7 +69,7 @@ main > .itemsList-container > .itemsList > li > a {
   height: 250px;
 }
 
-main > .itemsList-container > .itemsList > li > a > h2 {
+main > .itemsList-container > .itemsList > li > a > h2, main > .itemsList-container > .itemsListFull > li > a > h2 {
   font-family: "Poppins";
   font-size: 14px;
   text-align: center;
@@ -69,20 +80,20 @@ main > .itemsList-container > .itemsList > li > a > h2 {
   text-overflow: ellipsis;
 }
 
-main > .itemsList-container > .itemsList > li > a > picture {
+main > .itemsList-container > .itemsList > li > a > picture, main > .itemsList-container > .itemsListFull > li > a > picture {
   position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-main > .itemsList-container > .itemsList > li > a:hover > picture::before {
+main > .itemsList-container > .itemsList > li > a:hover > picture::before, main > .itemsList-container > .itemsListFull > li > a:hover > picture::before {
   position: absolute;
   content: "\25B6";
   font-size: 32px;
   font-weight: bold;
-  color: #1ed75f98;
-  border: 5px solid #1ed75f7c;
+  color: #1ed75f;
+  border: 5px solid #1ed75f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +104,7 @@ main > .itemsList-container > .itemsList > li > a:hover > picture::before {
   cursor: pointer;
 }
 
-main > .itemsList-container > .itemsList > li > a > picture > img {
+main > .itemsList-container > .itemsList > li > a > picture > img, main > .itemsList-container > .itemsListFull > li > a > picture > img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -101,32 +112,35 @@ main > .itemsList-container > .itemsList > li > a > picture > img {
 }
 
 @media (max-width: 768px) {
-  main > .itemsList-container > .itemsList {
+  main {
+    padding: 20px;
+  }
+  main > .itemsList-container > .itemsList, main > .itemsList-container > .itemsListFull {
     display: flex;
     align-items: start;
     padding: 30px 10px 0 10px;
     gap: 20px;
   }
 
-  main > .itemsList-container > .itemsList > li > a {
+  main > .itemsList-container > .itemsList > li > a, main > .itemsList-container > .itemsListFull > li > a {
     width: 100px;
     height: 180px;
   }
 
-  main > .itemsList-container > .itemsList > li > a > h2 {
+  main > .itemsList-container > .itemsList > li > a > h2,  main > .itemsList-container > .itemsListFull > li > a > h2 {
     font-size: 12px;
   }
 
-  main > .itemsList-container > .itemsList > li > a > picture {
+  main > .itemsList-container > .itemsList > li > a > picture, main > .itemsList-container > .itemsListFull > li > a > picture {
     width: 100px;
     height: 100px;
   }
 
-  main > .itemsList-container > .itemsList > li > a:hover > picture::before {
+  main > .itemsList-container > .itemsList > li > a:hover > picture::before,  main > .itemsList-container > .itemsListFull > li > a:hover > picture::before {
     border: 3px solid #1ed75f7c;
   }
 
-  main > .itemsList-container > .itemsList > li > a > picture > img {
+  main > .itemsList-container > .itemsList > li > a > picture > img,  main > .itemsList-container > .itemsListFull > li > a > picture > img {
     width: 100px;
     height: 100px;
   }

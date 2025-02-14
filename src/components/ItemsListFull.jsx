@@ -3,15 +3,13 @@ import "../css/components/main.css";
 import "../assets/database/artist.js";
 import { Link } from "react-router-dom";
 
-const ItemsList = ({ title, array, maxItems, pathSingle, pathMultiple, favorite }) => {
-  {favorite ? array = array.filter((item) => item.favorite) : array}
+const ItemsListFull = ({ title, array, maxItems, pathSingle, pathMultiple }) => {
   return (
     <div className="itemsList-container">
       <div className="itemList-header">
         <h2>{title}</h2>
-        {!favorite ? (<Link to={`/${pathMultiple}`}>Mostrar mais</Link>) : (<></>)}
       </div>
-      <ul className="itemsList">
+      <ul className="itemsListFull">
         {array
           .filter((item, index) => index < maxItems)
           .map((item, index) => (
@@ -29,4 +27,4 @@ const ItemsList = ({ title, array, maxItems, pathSingle, pathMultiple, favorite 
   );
 };
 
-export default ItemsList;
+export default ItemsListFull;

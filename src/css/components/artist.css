@@ -1,0 +1,115 @@
+.artist-container > picture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.artist-container > picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background-image: linear-gradient(
+    to bottom,
+    black 0%,
+    rgba(0, 0, 0, 0) 10%,
+    black 100%
+  );
+}
+
+.artist-container > picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-container > picture > h1 {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.random-play-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 20px;
+  font-size: 16px;
+  opacity: .5;
+  font-weight: normal;
+}
+
+.artist-container > .song-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.artist-container > .song-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(10, 10, 10);
+  border-radius: 10px;
+}
+
+.artist-container > .song-list li:hover {
+  background-color: #1ed75f41;
+}
+
+.artist-container > .song-list > li img {
+  width: 60px;
+  height: 60px;
+}
+
+.artist-container > .song-list > li .song-infos {
+  display: flex;
+  gap: 20px;
+}
+
+.artist-container > .song-list > li .song-infos > div h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.artist-container > .song-list > li .song-infos > div h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.artist-container > .song-list > li .song-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.artist-container > .song-list > li .song-play .play-song-icon {
+  font-size: 60px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.artist-container > .song-list > li .song-play .play-song-icon:hover {
+  font-size: 60px;
+  cursor: pointer;
+  color: #1ED760;
+  opacity: 1;
+}

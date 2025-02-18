@@ -15,8 +15,15 @@ const Song = () => {
 
   const songIndex = songsArray.findIndex((song) => song.id == id);
 
-  const nextIdSong = songsArray[(songIndex + 1).toString()].id
-  const prevIdSong = songsArray[(songIndex - 1).toString()].id
+  const nextIdSong =
+    (songIndex >= songsArray.length)
+      ? songsArray[songIndex.toString()].id
+      : songsArray[(songIndex + 1).toString()].id;
+  const prevIdSong =
+    (songIndex <= 1)
+      ? songsArray[songIndex.toString()].id
+      : songsArray[(songIndex - 1).toString()].id;
+
 
   const [progress, setProgress] = useState(0);
   const songDuration = song.duration.split(":");

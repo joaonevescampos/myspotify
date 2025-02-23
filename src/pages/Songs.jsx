@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import ItemsListFull from "../components/ItemsListFull";
 import { fetchSongsAndArtists } from "../api/api.js";
+import Loading from "../components/Loading.jsx";
 
 const Songs = () => {
-  
   const [songsArray, setSongsArray] = useState([]);
 
   useEffect(() => {
@@ -15,15 +15,21 @@ const Songs = () => {
   }, []);
 
   return (
-    <main>
-      <ItemsListFull
-        title="Todas as Músicas"
-        maxItems={songsArray.length}
-        array={songsArray}
-        pathSingle="song"
-        pathMultiple="songs"
-      />
-    </main>
+    <>
+      {songsArray.length > 0 ? (
+        <main>
+          <ItemsListFull
+            title="Todas as Músicas"
+            maxItems={songsArray.length}
+            array={songsArray}
+            pathSingle="song"
+            pathMultiple="songs"
+          />
+        </main>
+      ) : (
+        <Loading />
+      )}
+    </>
   );
 };
 

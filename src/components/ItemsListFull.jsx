@@ -3,7 +3,13 @@ import "../css/components/main.css";
 import "../assets/database/artist.js";
 import { Link } from "react-router-dom";
 
-const ItemsListFull = ({ title, array, maxItems, pathSingle, pathMultiple }) => {
+const ItemsListFull = ({
+  title,
+  array,
+  maxItems,
+  pathSingle,
+  pathMultiple,
+}) => {
   return (
     <div className="itemsList-container">
       <div className="itemList-header">
@@ -18,7 +24,10 @@ const ItemsListFull = ({ title, array, maxItems, pathSingle, pathMultiple }) => 
                 <picture>
                   <img src={item.image} alt={item.name} />
                 </picture>
-                <h2>{item.name}</h2>
+                <div className="figcaption">
+                  <h2>{item.name}</h2>
+                  <h3>{item.artist}</h3>
+                </div>
               </Link>
             </li>
           ))}

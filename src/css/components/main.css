@@ -46,7 +46,7 @@ main > .itemsList-container > .itemsList {
   margin: auto;
 }
 
-main > .itemsList-container > .itemsList .figcaption {
+main > .itemsList-container > .itemsList .figcaption, main > .itemsListFull-container > .itemsListFull .figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +54,7 @@ main > .itemsList-container > .itemsList .figcaption {
   gap: 5px;
 }
 
-main > .itemsList-container > .itemsList h2 {
+main > .itemsList-container > .itemsList h2, main > .itemsList-container > .itemsListFull h2 {
   font-size: 16px;
   text-align: center;
   display: -webkit-box;
@@ -64,11 +64,16 @@ main > .itemsList-container > .itemsList h2 {
   text-overflow: ellipsis;
 }
 
-main > .itemsList-container > .itemsList h3 {
+main > .itemsList-container > .itemsList h3, main > .itemsList-container > .itemsListFull h3 {
   font-size: 14px;
   font-weight: 400;
   opacity: 0.5;
   text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limita a 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* itemsListFull  */

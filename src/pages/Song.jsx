@@ -24,7 +24,6 @@ const Song = () => {
       ? songsArray[songIndex.toString()].id
       : songsArray[(songIndex - 1).toString()].id;
 
-
   const [progress, setProgress] = useState(0);
   const songDuration = song.duration.split(":");
   const songMinutes = Number(songDuration[0]);

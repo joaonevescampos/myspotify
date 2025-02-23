@@ -20,6 +20,7 @@ const Main = () => {
         array={songsArray}
         pathSingle="song"
         pathMultiple="songs"
+        isSong={true}
       />
       <ItemsList
         title="Músicas Favoritas"
@@ -28,6 +29,7 @@ const Main = () => {
         favorite={true}
         pathSingle="song"
         pathMultiple="songs"
+        isSong={true}
       />
     </main>
   );

@@ -1,26 +1,48 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
 }
 
-header > a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
+header > .header-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
 }
 
-header > a:hover {
-    text-decoration: underline;
+header > .header-branding .logo-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header > .header-branding .logo-title:hover {
+  text-decoration: underline;
+}
+
+header > .header-branding > .rights {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  opacity: 0.4;
+  font-weight: 400;
+}
+
+header > .header-branding > .rights:hover {
+  color: #1ed760;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
-    header {
+  header {
     padding: 20px 10px;
-}
+  }
 
-header > a {
+  header > .header-branding .logo-title {
     font-size: 18px;
-}
+  }
 
+  header > .header-branding > .rights {
+  font-size: 10px;
+}
 }

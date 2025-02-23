@@ -3,7 +3,6 @@ import logoSpotify from '../assets/img/spotify-logo.png';
 import "../css/components/header.css";
 import "../css/reset.css";
 
-
 const Header = () => {
   return (
     <>

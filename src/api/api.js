@@ -2,8 +2,19 @@ import axios from "axios";
 
 const URL = "https://my-spotify-backend.onrender.com";
 
-const songsCollection = await axios.get(`${URL}/songs`);
-const artistsCollection = await axios.get(`${URL}/artists`);
+export async function fetchSongsAndArtists() {
+  try {
+    const [songsCollection, artistsCollection] = await Promise.all([
+      axios.get(`${URL}/songs`),
+      axios.get(`${URL}/artists`),
+    ]);
 
-export const songsArray = songsCollection.data
-export const artistArray = artistsCollection.data;
+    return {
+      songsArray: songsCollection.data,
+      artistArray: artistsCollection.data,
+    };
+  } catch (error) {
+    console.error("Erro ao buscar os dados:", error);
+    return { songsArray: [], artistArray: [] };
+  }
+}
